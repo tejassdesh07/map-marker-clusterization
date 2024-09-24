@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <MapWithCluster />
+    <wwSection />
   </div>
 </template>
 
 <script>
-import MapWithCluster from './components/MapWithCluster.vue';
+import wwSection from './wwSection.vue';
 
 export default {
   name: 'App',
   components: {
-    MapWithCluster,
+    wwSection,
   },
 };
 </script>

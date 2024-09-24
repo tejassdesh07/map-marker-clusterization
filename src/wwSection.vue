@@ -9,7 +9,7 @@ import { MarkerClusterer } from '@googlemaps/markerclusterer';
 /* global google */
 
 export default {
-  name: 'MapWithCluster',
+  name: 'wwSection',
   mounted() {
     this.initMap();
   },
