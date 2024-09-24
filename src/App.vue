@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <wwSection />
+    <wwElement />
   </div>
 </template>
 
 <script>
-import wwSection from './wwSection.vue';
+import wwElement from './wwElement.vue';
 
 export default {
   name: 'App',
   components: {
-    wwSection,
+    wwElement,
   },
 };
 </script>
