@@ -1,16 +1,12 @@
-
 import { createApp } from 'vue';
 import App from './App.vue';
-import GoogleMapsPlugin from 'vue3-google-map'; // Ensure this matches the correct export
+import { GoogleMap, Marker as GoogleMarker, MarkerCluster } from 'vue3-google-map'; // Rename Marker to GoogleMarker
 
 const app = createApp(App);
 
-// Use the Google Maps plugin
-app.use(GoogleMapsPlugin, {
-  load: {
-    key: 'AIzaSyCQuoMzPyQ64hGHihyH1xdKyxE528HAAyU',
-    libraries: 'places', // Specify any libraries you need
-  },
-});
+// Register the components globally
+app.component('GoogleMap', GoogleMap);
+app.component('GoogleMarker', GoogleMarker); // Use a multi-word name
+app.component('MarkerCluster', MarkerCluster);
 
 app.mount('#app');
